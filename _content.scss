@@ -1,0 +1,207 @@
+div#content{
+
+	section#sobre-home{
+		padding:80px 0;
+	}
+
+	section#servicos-detalhes{
+		padding-top:40px;
+	}
+
+	section#banner{
+		padding-top:40px;
+	}
+
+
+	section.servicos{
+		background-color:#f9f9f9;
+		padding:60px 0;
+
+		h4,p{
+			margin: 15px 0;
+		}
+	
+	}
+
+	section.servicosb{
+		padding:60px 0;
+
+		h4,p{
+			margin: 15px 0;
+		}
+	
+	}
+
+	section#fotos-sobre{
+		padding-top:40px;
+		padding-bottom:80px;	
+		background-color:white;
+
+		ul{
+			list-style-type:none;
+			margin-bottom: 20px;
+
+			li{
+				margin: 25px 0px;
+			}
+			li:before{
+				content: "\2713 \00a0";
+				font-weight:bold;
+			}
+		}
+
+	}
+
+	section#maps{
+		background-color:#dfc76d;
+		color: #501819;
+
+		.detalhes-maps{
+			padding: 25px 0;
+		}
+	}
+
+	section#sobre{
+		padding-bottom:40px;
+
+		ul{
+			list-style-type:none;
+			margin-bottom: 20px;
+
+			li{
+				margin: 15px 0px;
+			}
+			li:before{
+				content: "\2713 \00a0";
+				font-weight:bold;
+			}
+		}
+
+		div.fotos-sobre{
+			img{
+				float:left;
+				border:5px solid #e5e5e5;
+				margin:5px;
+			}
+		}	
+	}
+
+	section#form-contato{
+		padding:25px 0;
+		background-color:#f3f2e9;
+
+		div.form-desc{
+			background-color:#baad29;
+			color:white;
+			text-align: left;
+			padding:25px 35px;
+		}
+	}
+
+	section#contato{
+		margin-top: 40px;
+
+		div.quadro{
+			padding:25px 50px;
+			background-color:#158fdb;
+			margin-top: 10px;
+			color:white;
+		}
+	}
+
+	section#redes-bot{
+		padding:60px 0;	
+		background-color:white;
+	
+		.redes_sociais_bot{
+			margin-bottom: 5px;
+			height:67px;
+			text-align: left;
+			list-style:none;
+			margin: 0 auto;
+			margin-top: 30px;
+			width: 310px;
+			padding:0;
+		}
+
+		.redes_sociais_bot li:hover{
+		    opacity: 0.6;
+		    filter: alpha(opacity=60); /* For IE8 and earlier */
+		}
+
+		.redes_sociais_bot a{
+			display: inline-block;
+			width:67px;
+			height:67px
+		}
+
+		.redes_sociais_bot .youtube{
+			background-image: url("images/redes-bot.jpg");
+			background-position: left,center;
+			background-repeat:no-repeat;
+			width:70px;
+			height:67px;
+			display:inline-block;		
+		}
+
+		.redes_sociais_bot .instagram{
+			background-image: url("images/redes-bot.jpg");
+			background-position: -86px,center;
+			background-repeat:no-repeat;
+			width:70px;
+			height:67px;
+			display:inline-block;		
+		}
+
+		.redes_sociais_bot .twitter{
+			background-image: url("images/redes-bot.jpg");
+			background-position: -172px,center;
+			background-repeat:no-repeat;
+			width:70px;
+			height:67px;
+			display:inline-block;		
+		}
+
+		.redes_sociais_bot .facebook{
+			background-image: url("images/redes-bot.jpg");
+			background-position: right,center;
+			background-repeat:no-repeat;
+			width:70px;
+			height:67px;
+			display:inline-block;		
+		}
+	}
+
+}
+@media (max-width: 991px) { 
+	div#content{ 
+		.col-md-4{
+			margin-bottom:25px;
+		}
+		.margin-responsivo{
+			margin-bottom:10px;
+		}
+		section#atelie-menu{
+			ul.btn-atelie{
+		
+				li{
+					float:none;
+					width: 100%;
+					margin-bottom: 10px;	
+				}
+
+			}
+		
+		}
+
+		section#atelie{
+			div.col-md-4{
+				margin-bottom: 25px;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {  
+  
+}

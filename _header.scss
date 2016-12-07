@@ -1,0 +1,206 @@
+section#header{
+	header{
+		background-color:#ffffff;
+		color:white;
+		padding-top:8px;
+		padding-bottom:8px;
+
+        span{
+            padding-top:5px;
+            display:block;
+            float:left;
+        }
+
+        ul{
+            padding-left:15px;
+            float:left;
+        }
+
+        ul.redes_sociais_header{
+            height:28px;
+            text-align: left;
+            list-style:none;
+            margin-bottom:0;
+        }
+
+        ul.redes_sociais_header li:hover{
+            opacity: 0.6;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+        }
+
+        ul.redes_sociais_header li{
+            margin-right: 5px;
+        }
+
+        ul.redes_sociais_header a{
+            display: inline-block;
+            width:22px;
+            height:20px;
+        }
+
+        .redes_sociais_header .youtube{
+            background-image: url("images/redes-sociais.jpg");
+            background-position: 0,center;
+            background-repeat:no-repeat;
+            width:28px;
+            height:28px;
+            display:inline-block;       
+        }
+
+        .redes_sociais_header .instagram{
+            background-image: url("images/redes-sociais.jpg");
+            background-position: -35px,center;
+            background-repeat:no-repeat;
+            width:28px;
+            height:28px;
+            display:inline-block;       
+        }
+
+        .redes_sociais_header .twitter{
+            background-image: url("images/redes-sociais.jpg");
+            background-position: -70px,center;
+            background-repeat:no-repeat;
+            width:28px;
+            height:28px;
+            display:inline-block;       
+        }
+
+        .redes_sociais_header .facebook{
+            background-image: url("images/redes-sociais.jpg");
+            background-position: -106px,center;
+            background-repeat:no-repeat;
+            width:28px;
+            height:28px;
+            display:inline-block;       
+        }
+        .btn-login{
+            background-color:#ffc709;
+            padding:5px 10px;
+            color:#003869;
+            border:0;
+            font-weight: bold;
+            border-radius: 5px; 
+            margin-left: 10px;
+            font-size:12px;
+        }
+
+        .btn-login:hover{
+            background-color:#ffdd6b;
+        }
+
+	}
+
+	nav.princ{
+        padding:20px 0;
+        background-color:#501819;
+
+        form.search-form{
+            input.pesquisar-input{
+                background-color:#e4e4e4;
+                border:0;
+                float:left;
+                padding:10.5px 5px;
+            }
+            input.pesquisar-submit{
+                float:left;
+            }
+        }
+        
+        div.menu-header{
+            margin-top: 30px;
+
+            div.menu-op{
+                float:right;
+                margin-right: 20px;
+                a{
+                    color:#e9c130;
+                    font-weight: bold;
+                    padding:10px;
+                    font-size:16px;
+                }
+                a:hover{
+                    color:#f4e097;
+                }
+            }
+        }
+
+	}
+
+
+    nav.aux{
+        padding:10px 0;
+        background-color:#dfc76d;
+
+        form.search-form{
+            input.pesquisar-input{
+                background-color:#e4e4e4;
+                border:0;
+                float:left;
+                padding:10.5px 5px;
+            }
+            input.pesquisar-submit{
+                float:left;
+            }
+        }
+        
+        div.menu-header{
+
+            div.menu-op{
+                float:right;
+                margin-right: 20px;
+                a{
+                    color:#501819;
+                    font-weight: bold;
+                    padding:10px;
+                    font-size:16px;
+                }
+                a:hover{
+                    color:#967475;
+                }
+            }
+        }
+
+        
+
+    }
+}
+
+@media (max-width: 991px) {  
+
+    div.header-login-responsive{
+        display: block !important;
+    }
+
+    div.header-login{
+        display: none !important;
+    }    
+
+    div.menu-responsivo{
+        width: 50px;
+        text-align: left;
+        display: block;
+        padding: 10px;
+    }
+    div.menu-header{
+        display: none;
+    }
+
+}
+
+@media (min-width: 992px) {  
+    div.header-login-responsive{
+        display: none !important;
+    }
+
+    div.header-login{
+        display: block !important;
+    }  
+
+    div.menu-responsivo{
+        display: none;
+    }
+    ul.menu-header{
+        display: block;
+    }   
+
+}

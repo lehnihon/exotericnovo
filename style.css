@@ -1,0 +1,453 @@
+/*
+Theme Name: exotericnovo
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: site
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+site is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+@font-face {
+  font-family: FuturaBT;
+  src: url(font/tt0142m_.ttf); }
+#page {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  color: #373737;
+  text-align: center;
+  background-color: white; }
+  #page a {
+    color: #373737; }
+  #page a:hover {
+    text-decoration: none; }
+  #page h1 {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 36px; }
+  #page h1.small {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #501819; }
+  #page h2 {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 26px;
+    color: #501819;
+    font-weight: bold;
+    margin: 0px; }
+  #page h3 {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: normal; }
+  #page h4 {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    color: #501819; }
+  #page h5 {
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: normal; }
+  #page .videoWrapperb {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0; }
+  #page .videoWrapperb iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  #page .videoWrapper {
+    position: relative;
+    padding-bottom: 26.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0; }
+  #page .videoWrapper iframe {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  #page .cor-base {
+    color: #b70456; }
+  #page .btn-saiba-mais {
+    color: #501819;
+    font-weight: bold; }
+  #page .btn-saiba-mais:hover {
+    color: #967475; }
+  #page .btn-confira {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #501819;
+    padding: 10px 45px;
+    color: #ffffff;
+    font-weight: bold;
+    display: inline-block; }
+  #page .btn-confira:hover {
+    background-color: #967475; }
+  #page .btn-azul {
+    background-color: #158fdb;
+    color: white; }
+  #page .btn-azul:hover {
+    color: #158fdb; }
+  #page .bx-wrapper .bx-viewport {
+    margin-top: 10px;
+    -webkit-box-shadow: 0 0 0px;
+    box-shadow: 0 0 0px;
+    border: 0px solid white;
+    left: 0px; }
+    #page .bx-wrapper .bx-viewport .bx-clone {
+      display: none !important; }
+  #page .branco {
+    color: white !important; }
+  #page .azul {
+    color: #0090df !important; }
+  #page .btn-receba {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: white;
+    padding: 10px 50px;
+    color: #158fdb;
+    border: 0;
+    font-weight: bold; }
+  #page .btn-receba:hover {
+    background-color: #DCDCDC; }
+  #page .input-receba-wrap {
+    margin-bottom: 5px;
+    color: #606060; }
+  #page .input-receba {
+    border: 0;
+    padding: 10px;
+    width: 350px;
+    border-radius: 3px;
+    color: #373737; }
+  #page .input-contato {
+    border: 0;
+    padding: 5px;
+    background-color: #f6f8fb; }
+  #page .input-contatob {
+    border: 0;
+    padding: 5px;
+    background-color: white; }
+  #page .btn-enviar {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #158fdb;
+    padding: 10px 50px;
+    color: white;
+    border: 0;
+    font-weight: bold; }
+  #page .btn-enviar:hover {
+    color: #158fdb;
+    background-color: #DCDCDC; }
+  #page div.paginacao {
+    margin: 50px 0; }
+    #page div.paginacao .page-numbers {
+      padding: 5px;
+      background-color: #ececec; }
+    #page div.paginacao .current {
+      background-color: #b70456;
+      color: white; }
+  #page section#header header {
+    background-color: #ffffff;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px; }
+    #page section#header header span {
+      padding-top: 5px;
+      display: block;
+      float: left; }
+    #page section#header header ul {
+      padding-left: 15px;
+      float: left; }
+    #page section#header header ul.redes_sociais_header {
+      height: 28px;
+      text-align: left;
+      list-style: none;
+      margin-bottom: 0; }
+    #page section#header header ul.redes_sociais_header li:hover {
+      opacity: 0.6;
+      filter: alpha(opacity=60);
+      /* For IE8 and earlier */ }
+    #page section#header header ul.redes_sociais_header li {
+      margin-right: 5px; }
+    #page section#header header ul.redes_sociais_header a {
+      display: inline-block;
+      width: 22px;
+      height: 20px; }
+    #page section#header header .redes_sociais_header .youtube {
+      background-image: url("images/redes-sociais.jpg");
+      background-position: 0,center;
+      background-repeat: no-repeat;
+      width: 28px;
+      height: 28px;
+      display: inline-block; }
+    #page section#header header .redes_sociais_header .instagram {
+      background-image: url("images/redes-sociais.jpg");
+      background-position: -35px,center;
+      background-repeat: no-repeat;
+      width: 28px;
+      height: 28px;
+      display: inline-block; }
+    #page section#header header .redes_sociais_header .twitter {
+      background-image: url("images/redes-sociais.jpg");
+      background-position: -70px,center;
+      background-repeat: no-repeat;
+      width: 28px;
+      height: 28px;
+      display: inline-block; }
+    #page section#header header .redes_sociais_header .facebook {
+      background-image: url("images/redes-sociais.jpg");
+      background-position: -106px,center;
+      background-repeat: no-repeat;
+      width: 28px;
+      height: 28px;
+      display: inline-block; }
+    #page section#header header .btn-login {
+      background-color: #ffc709;
+      padding: 5px 10px;
+      color: #003869;
+      border: 0;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-left: 10px;
+      font-size: 12px; }
+    #page section#header header .btn-login:hover {
+      background-color: #ffdd6b; }
+  #page section#header nav.princ {
+    padding: 20px 0;
+    background-color: #501819; }
+    #page section#header nav.princ form.search-form input.pesquisar-input {
+      background-color: #e4e4e4;
+      border: 0;
+      float: left;
+      padding: 10.5px 5px; }
+    #page section#header nav.princ form.search-form input.pesquisar-submit {
+      float: left; }
+    #page section#header nav.princ div.menu-header {
+      margin-top: 30px; }
+      #page section#header nav.princ div.menu-header div.menu-op {
+        float: right;
+        margin-right: 20px; }
+        #page section#header nav.princ div.menu-header div.menu-op a {
+          color: #e9c130;
+          font-weight: bold;
+          padding: 10px;
+          font-size: 16px; }
+        #page section#header nav.princ div.menu-header div.menu-op a:hover {
+          color: #f4e097; }
+  #page section#header nav.aux {
+    padding: 10px 0;
+    background-color: #dfc76d; }
+    #page section#header nav.aux form.search-form input.pesquisar-input {
+      background-color: #e4e4e4;
+      border: 0;
+      float: left;
+      padding: 10.5px 5px; }
+    #page section#header nav.aux form.search-form input.pesquisar-submit {
+      float: left; }
+    #page section#header nav.aux div.menu-header div.menu-op {
+      float: right;
+      margin-right: 20px; }
+      #page section#header nav.aux div.menu-header div.menu-op a {
+        color: #501819;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 16px; }
+      #page section#header nav.aux div.menu-header div.menu-op a:hover {
+        color: #967475; }
+  @media (max-width: 991px) {
+    #page div.header-login-responsive {
+      display: block !important; }
+    #page div.header-login {
+      display: none !important; }
+    #page div.menu-responsivo {
+      width: 50px;
+      text-align: left;
+      display: block;
+      padding: 10px; }
+    #page div.menu-header {
+      display: none; } }
+  @media (min-width: 992px) {
+    #page div.header-login-responsive {
+      display: none !important; }
+    #page div.header-login {
+      display: block !important; }
+    #page div.menu-responsivo {
+      display: none; }
+    #page ul.menu-header {
+      display: block; } }
+  #page div#content section#sobre-home {
+    padding: 80px 0; }
+  #page div#content section#servicos-detalhes {
+    padding-top: 40px; }
+  #page div#content section#banner {
+    padding-top: 40px; }
+  #page div#content section.servicos {
+    background-color: #f9f9f9;
+    padding: 60px 0; }
+    #page div#content section.servicos h4, #page div#content section.servicos p {
+      margin: 15px 0; }
+  #page div#content section.servicosb {
+    padding: 60px 0; }
+    #page div#content section.servicosb h4, #page div#content section.servicosb p {
+      margin: 15px 0; }
+  #page div#content section#fotos-sobre {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background-color: white; }
+    #page div#content section#fotos-sobre ul {
+      list-style-type: none;
+      margin-bottom: 20px; }
+      #page div#content section#fotos-sobre ul li {
+        margin: 25px 0px; }
+      #page div#content section#fotos-sobre ul li:before {
+        content: "\2713 \00a0";
+        font-weight: bold; }
+  #page div#content section#maps {
+    background-color: #dfc76d;
+    color: #501819; }
+    #page div#content section#maps .detalhes-maps {
+      padding: 25px 0; }
+  #page div#content section#sobre {
+    padding-bottom: 40px; }
+    #page div#content section#sobre ul {
+      list-style-type: none;
+      margin-bottom: 20px; }
+      #page div#content section#sobre ul li {
+        margin: 15px 0px; }
+      #page div#content section#sobre ul li:before {
+        content: "\2713 \00a0";
+        font-weight: bold; }
+    #page div#content section#sobre div.fotos-sobre img {
+      float: left;
+      border: 5px solid #e5e5e5;
+      margin: 5px; }
+  #page div#content section#form-contato {
+    padding: 25px 0;
+    background-color: #f3f2e9; }
+    #page div#content section#form-contato div.form-desc {
+      background-color: #baad29;
+      color: white;
+      text-align: left;
+      padding: 25px 35px; }
+  #page div#content section#contato {
+    margin-top: 40px; }
+    #page div#content section#contato div.quadro {
+      padding: 25px 50px;
+      background-color: #158fdb;
+      margin-top: 10px;
+      color: white; }
+  #page div#content section#redes-bot {
+    padding: 60px 0;
+    background-color: white; }
+    #page div#content section#redes-bot .redes_sociais_bot {
+      margin-bottom: 5px;
+      height: 67px;
+      text-align: left;
+      list-style: none;
+      margin: 0 auto;
+      margin-top: 30px;
+      width: 310px;
+      padding: 0; }
+    #page div#content section#redes-bot .redes_sociais_bot li:hover {
+      opacity: 0.6;
+      filter: alpha(opacity=60);
+      /* For IE8 and earlier */ }
+    #page div#content section#redes-bot .redes_sociais_bot a {
+      display: inline-block;
+      width: 67px;
+      height: 67px; }
+    #page div#content section#redes-bot .redes_sociais_bot .youtube {
+      background-image: url("images/redes-bot.jpg");
+      background-position: left,center;
+      background-repeat: no-repeat;
+      width: 70px;
+      height: 67px;
+      display: inline-block; }
+    #page div#content section#redes-bot .redes_sociais_bot .instagram {
+      background-image: url("images/redes-bot.jpg");
+      background-position: -86px,center;
+      background-repeat: no-repeat;
+      width: 70px;
+      height: 67px;
+      display: inline-block; }
+    #page div#content section#redes-bot .redes_sociais_bot .twitter {
+      background-image: url("images/redes-bot.jpg");
+      background-position: -172px,center;
+      background-repeat: no-repeat;
+      width: 70px;
+      height: 67px;
+      display: inline-block; }
+    #page div#content section#redes-bot .redes_sociais_bot .facebook {
+      background-image: url("images/redes-bot.jpg");
+      background-position: right,center;
+      background-repeat: no-repeat;
+      width: 70px;
+      height: 67px;
+      display: inline-block; }
+  @media (max-width: 991px) {
+    #page div#content .col-md-4 {
+      margin-bottom: 25px; }
+    #page div#content .margin-responsivo {
+      margin-bottom: 10px; }
+    #page div#content section#atelie-menu ul.btn-atelie li {
+      float: none;
+      width: 100%;
+      margin-bottom: 10px; }
+    #page div#content section#atelie div.col-md-4 {
+      margin-bottom: 25px; } }
+  #page #footer {
+    text-align: left; }
+    #page #footer div.logo-footer {
+      padding: 20px 0;
+      background-color: #501819; }
+    #page #footer div.footer-content {
+      padding: 50px 0;
+      background-color: #471011;
+      color: white; }
+      #page #footer div.footer-content ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none; }
+        #page #footer div.footer-content ul a {
+          color: #FFFFFF; }
+        #page #footer div.footer-content ul a:hover {
+          color: #fff40e; }
+    #page #footer div.copyrino {
+      text-align: center;
+      color: #471011;
+      background-color: #dfc76d;
+      padding: 20px 0; }
+
+.e-cinza:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
+.e-claro:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */ }
+
+/*# sourceMappingURL=style.css.map */
