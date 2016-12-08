@@ -154,10 +154,25 @@ get_header(); ?>
 					Ao locar as nossas salas, você terá um local requintado e aconchegante para 
 					atender aos seus clientes e dispor de toda a nossa infraestrutura.
 					</p><br>
-					<a href="<?php echo esc_url( home_url( '/' ) )."sobre"; ?>" class="btn-confira margin-responsivo">CONFIRA</a>
+					<a href="<?php echo esc_url( home_url( '/' ) )."sobre"; ?>" class="btn-confira margin-responsivo">saiba mais</a>
 				</div>
 				<div class="col-md-6 text-left">
-					<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/ar-condicionado.jpg"; ?>"/>
+					<div class="row">
+						<div class="col-md-6">
+							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner-3.jpg"; ?>"/>
+						</div>
+						<div class="col-md-6">
+							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner-3.jpg"; ?>"/>
+						</div>
+					</div>
+					<div class="row">	
+						<div class="col-md-6">
+							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner-3.jpg"; ?>"/>
+						</div>
+						<div class="col-md-6">
+							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner-3.jpg"; ?>"/>
+						</div>
+					</div>
 				</div>
 			</div>	
 		</div>	

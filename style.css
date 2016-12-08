@@ -427,14 +427,18 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       padding: 50px 0;
       background-color: #471011;
       color: white; }
+      #page #footer div.footer-content h4 {
+        color: #ffffff; }
       #page #footer div.footer-content ul {
         padding: 0;
         margin: 0;
         list-style-type: none; }
-        #page #footer div.footer-content ul a {
-          color: #FFFFFF; }
-        #page #footer div.footer-content ul a:hover {
-          color: #fff40e; }
+        #page #footer div.footer-content ul li {
+          margin: 5px 0; }
+          #page #footer div.footer-content ul li a {
+            color: #FFFFFF; }
+          #page #footer div.footer-content ul li a:hover {
+            color: #fff40e; }
     #page #footer div.copyrino {
       text-align: center;
       color: #471011;

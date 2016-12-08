@@ -11,15 +11,21 @@
 		background-color:#471011;
 		color:white;
 
+		h4{
+			color:#ffffff;
+		}
 		ul{
 			padding:0;
 			margin: 0;
 			list-style-type: none;
-			a{
-				color:#FFFFFF;	
-			}
-			a:hover{
-				color:#fff40e;
+			li{
+				margin:5px 0;
+				a{
+					color:#FFFFFF;	
+				}
+				a:hover{
+					color:#fff40e;
+				}
 			}
 		}
 	}
