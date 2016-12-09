@@ -6,8 +6,9 @@
  */
 
 get_header(); ?>
-
 <div id="content">
+
+<div id="single">
 	<div class="container">
 		<div class="row">
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -29,8 +30,10 @@ get_header(); ?>
 		</div><!-- .row -->
 	</div><!-- .container -->
 
-	<?php get_template_part( 'template-parts/redes-bot'); ?>
-	
-</div><!-- #content -->
+</div>
+
+<?php get_template_part( 'template-parts/redes-bot'); ?>
+
+</div>
 
 <?php get_footer(); ?>

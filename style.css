@@ -309,6 +309,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     padding: 60px 0; }
     #page div#content section.servicos h4, #page div#content section.servicos p {
       margin: 15px 0; }
+  #page div#content div#single {
+    padding-top: 40px; }
   #page div#content section.servicosb {
     padding: 60px 0; }
     #page div#content section.servicosb h4, #page div#content section.servicosb p {
@@ -352,13 +354,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       color: white;
       text-align: left;
       padding: 25px 35px; }
+  #page div#content section#locacao {
+    padding: 40px 0; }
   #page div#content section#contato {
     margin-top: 40px; }
     #page div#content section#contato div.quadro {
       padding: 25px 50px;
-      background-color: #158fdb;
+      background-color: #dfc76d;
       margin-top: 10px;
-      color: white; }
+      color: #501819; }
   #page div#content section#redes-bot {
     padding: 60px 0;
     background-color: white; }
