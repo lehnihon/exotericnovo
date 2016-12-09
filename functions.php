@@ -182,7 +182,7 @@ function change_post_object_label() {
 add_action( 'init', 'change_post_object_label' );
 add_action( 'admin_menu', 'change_post_menu_label' );
 
-function register_post_type_blog(){
+function register_post_type_produto(){
 	$singular = 'Produto';
 	$plural = 'Produtos';
 	$labels = array(
@@ -197,9 +197,9 @@ function register_post_type_blog(){
         'menu_position' => 5
 		);
 
-	register_post_type('blog',$args);
+	register_post_type('produto',$args);
 }
-add_action(	'init','register_post_type_blog');
+add_action(	'init','register_post_type_produto');
 flush_rewrite_rules();
 function register_taxonomy_categoria(){
     $labels = array(
@@ -224,7 +224,7 @@ function register_taxonomy_categoria(){
         'query_var'         => true,
         'rewrite'           => array( 'slug' => 'categoria-blog' ),
     );
-	register_taxonomy( 'categoria_blog', 'blog', $args );
+	register_taxonomy( 'categoria_produto', 'produto', $args );
 }
 add_action('init','register_taxonomy_categoria');
 
