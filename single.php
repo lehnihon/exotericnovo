@@ -14,16 +14,25 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<div class="col-md-6">
-					<a href="<?php the_permalink(); ?>">
-						<?php the_post_thumbnail('', array(
-							'class' => "img-responsive",
-						)); ?>
-					</a>
+					<h1 class="small"><?php the_title(); ?></h1>
+					
+					<div class="content"><?php echo strip_shortcodes(wpautop( get_the_content() )); ?></div>
 				</div>
 				<div class="col-md-6 text-left">
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-					<?php the_content(); ?>
+					<?php the_post_thumbnail('', array('class' => "img-responsive")); ?>
+					<div class="slider1">			
+						<?php
+					    if ( get_post_gallery() ) :
+					    $gallery = get_post_gallery( get_the_ID(), false );
+					        foreach( $gallery['src'] as $src ) : 
+						?>
+							<div class="slide"><a data-lightbox="prod" href="<?php echo $src; ?>"><img src="<?php echo $src; ?>"></a></div>
+						<?php
+				            endforeach;
+				        endif;
+						?>
+					</div>
 				</div>
 
 			<?php endwhile; // End of the loop. ?>
@@ -37,3 +46,16 @@ get_header(); ?>
 </div>
 
 <?php get_footer(); ?>
+<script>
+$('.slider1').bxSlider({
+    slideWidth: 200,
+    minSlides: 2,
+    maxSlides: 3,
+    slideMargin: 10,
+    controls:false,
+	onSliderLoad: function(){
+	    $(".bx-clone").children().removeAttr("data-lightbox");
+	}
+});
+
+</script>

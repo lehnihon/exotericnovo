@@ -153,6 +153,49 @@ function template_chooser($template)
 }
 add_filter('template_include', 'template_chooser');
 
+
+function BaseBreadcrumb() {
+    echo '<div class="basebreadcrumb">';
+    if (!is_home()) {
+        echo '<a href="'. esc_url(home_url('/')) .'">';
+        echo 'Home';
+        echo "</a> / ";
+        if (is_category() || is_single()) {
+            the_category(' / ');
+            if (is_single()) {
+                echo " / ";
+                the_title();
+            }
+        } elseif (is_page()) {
+            echo the_title();
+        }
+    }
+        echo '</div>';
+}
+
+function categoryIds(){
+	if(has_category()){
+		$categories = get_the_category();
+		$ids = array();
+		foreach($categories as $category){
+			$ids[] = $category->cat_ID;
+		}
+		return $ids;
+	}	
+}
+
+
+function categoryList(){
+	if(has_category()){
+		$categories = get_the_category();
+		$list = '';
+		foreach($categories as $category){
+			$list .= $category->name.', ';
+		}
+		echo substr($list, 0, -2);
+	}
+}
+
 /**
  * CUSTOM POST TYPE
  */
@@ -221,8 +264,7 @@ function register_taxonomy_categoria(){
         'labels'            => $labels,
         'show_ui'           => true,
         'show_admin_column' => true,
-        'query_var'         => true,
-        'rewrite'           => array( 'slug' => 'categoria-blog' ),
+        'query_var'         => true
     );
 	register_taxonomy( 'categoria_produto', 'produto', $args );
 }
