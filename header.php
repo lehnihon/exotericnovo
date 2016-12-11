@@ -43,7 +43,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 text-left">
-						<a href="<?php echo home_url( '/' ); ?>"><img class="e-claro" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo.png"; ?>" /></a>
+						<a href="<?php echo home_url( '/' ); ?>"><img class="img-responsive e-claro" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo.png"; ?>" /></a>
 					</div>
 					<div class="col-md-8 col-md-offset-1">
 						<div class="menu-responsivo">
@@ -80,21 +80,25 @@
 								<span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
 							</button>
 							<ul class="dropdown-menu">
-							<li><a href="<?php echo home_url( '/' ); ?>">início</a></li
-							><li><a href="<?php echo home_url( '/' )."sobre"; ?>">sobre</a></li
-							><li><a href="<?php echo home_url( '/' )."servicos"; ?>">terapeutas</a></li
-							><li><a href="<?php echo home_url( '/' )."calculadora-btus"; ?>">locação de salas</a></li
-							><li><a href="<?php echo home_url( '/' )."contato"; ?>">anúncie</a></li
-							><li><a href="<?php echo home_url( '/' )."contato"; ?>">fale conosco</a></li>
+							<?php 
+							$taxonomy = get_terms(array('taxonomy' => 'categoria_produto'));
+							foreach($taxonomy as $tax):
+							?>
+								<li><a href="<?php echo home_url( '/' )."categoria_produto/".$tax->slug; ?>"><?php echo $tax->name; ?></a></li>
+							<?php	
+							endforeach;
+							?>
 							</ul>								
 						</div>						
 						<div class="menu-header clearfix">
-							<div class="menu-op"><a href="<?php echo home_url( '/' )."contato"; ?>">fale conosco</a></div>
-							<div class="menu-op"><a href="<?php echo home_url( '/' )."contato"; ?>">anúncie</a></div>
-							<div class="menu-op"><a href="<?php echo home_url( '/calculadora-btus' ).""; ?>">locação de salas</a></div>
-							<div class="menu-op"><a href="<?php echo home_url( '/servicos' ).""; ?>">terapeutas</a></div>
-							<div class="menu-op"><a href="<?php echo home_url( '/' )."sobre"; ?>">sobre</a></div>
-							<div class="menu-op"><a href="<?php echo home_url( '/' ); ?>">início</a></div>
+							<?php 
+							$taxonomy = get_terms(array('taxonomy' => 'categoria_produto'));
+							foreach($taxonomy as $tax):
+							?>
+								<div class="menu-op"><a href="<?php echo home_url( '/' )."categoria_produto/".$tax->slug; ?>"><?php echo $tax->name; ?></a></div>
+							<?php	
+							endforeach;
+							?>
 						</div>
 					</div>					
 				</div>

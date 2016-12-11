@@ -18,16 +18,36 @@
 					<div class="col-md-6">
 						<h4>Serviços</h4>
 						<div class="row">
+						<?php 
+						$taxonomy = get_terms(array('taxonomy' => 'categoria_produto'));
+						shuffle($taxonomy);
+						$i = 0;
+						foreach($taxonomy as $tax):
+							if($i == 0 or $i == 6):
+						?>
 							<div class="col-md-6">
+							<?php
+							endif;
+							?>
 								<ul>
-									<li><a href="#">A Empresa</a></li>
+									<li><a href="<?php echo home_url( '/' )."categoria_produto/".$tax->slug; ?>"><?php echo $tax->name; ?></a></li>
 								</ul>
+							<?php 
+							$i++;
+							if($i == 6 ):
+							?>
 							</div>
-							<div class="col-md-6">
-								<ul>
-									<li><a href="#">A Empresa</a></li>
-								</ul>
-							</div>
+							<?php endif; ?>
+							<?php 
+							if($i == 12):
+							?>
+							<?php 
+							break;
+							endif; ?>
+						<?php 
+						endforeach;
+						?>
+						</div>
 						</div>
 					</div>
 				</div><!-- .row -->

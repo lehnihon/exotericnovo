@@ -6,8 +6,8 @@ get_header(); ?>
 		<div class="container">
 			<h1 class="small"><?php single_cat_title(); ?></h1><br>
 			<?php
-			$cat_ID = get_query_var('cat');
-			$args = array( 'posts_per_page' => 12, 'offset'=> 0, 'orderby' => 'rand', 'cat' => $cat_ID  );
+			$cat_ID = get_queried_object()->term_id;
+			$args = array( 'posts_per_page' => 12, 'offset'=> 0, 'orderby' => 'rand', 'tax_query' => array(array('taxonomy' => 'categoria_produto', 'terms' => $cat_ID) )  );
 			$query = new WP_Query( $args );
 			if ( $query->have_posts() ): ?>
 				<div class="row">	
