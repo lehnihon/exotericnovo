@@ -19,7 +19,7 @@ get_header(); ?>
 			</div><br>
 			<div class="row">
 			<?php
-			$args = array( 'posts_per_page' => 4, 'offset'=> 0, 'orderby' => 'rand'  );
+			$args = array( 'post_type' => 'produto', 'posts_per_page' => 4, 'orderby' => 'rand', 'tax_query' => array(array('taxonomy' => 'categoria_produto', 'field' => 'slug', 'terms' => 'massagens') )   );
 
 			$myposts = get_posts( $args );
 			$i = 0;

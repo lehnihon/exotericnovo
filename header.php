@@ -31,9 +31,9 @@
 						<span style="margin-left: 10px">WhatsApp.: <strong>11 95373-9510</strong></span>
 						<ul class="redes_sociais_header">
 							<li class="youtube"><a target="_blank" href="#"></a></li>
-							<li class="instagram"><a target="_blank" href="https://www.instagram.com/FristarAr/"></a></li>
-							<li class="twitter"><a target="_blank" href="https://twitter.com/FristarAr"></a></li>
-							<li class="facebook"><a target="_blank" href="https://www.facebook.com/Fristar.arcondicionado"></a></li>
+							<li class="instagram"><a target="_blank" href="#"></a></li>
+							<li class="twitter"><a target="_blank" href="#"></a></li>
+							<li class="facebook"><a target="_blank" href="#"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -53,17 +53,17 @@
 							<ul class="dropdown-menu">
 							<li><a href="<?php echo home_url( '/' ); ?>">início</a></li
 							><li><a href="<?php echo home_url( '/' )."sobre"; ?>">sobre</a></li
-							><li><a href="<?php echo home_url( '/' )."servicos"; ?>">terapeutas</a></li
-							><li><a href="<?php echo home_url( '/' )."calculadora-btus"; ?>">locação de salas</a></li
-							><li><a href="<?php echo home_url( '/' )."contato"; ?>">anúncie</a></li
+							><li><a href="<?php echo home_url( '/' )."terapeutas"; ?>">terapeutas</a></li
+							><li><a href="<?php echo home_url( '/' )."locacao-de-salas"; ?>">locação de salas</a></li
+							><li><a href="<?php echo home_url( '/' )."anuncie-conosco"; ?>">anúncie</a></li
 							><li><a href="<?php echo home_url( '/' )."contato"; ?>">fale conosco</a></li>
 							</ul>								
 						</div>						
 						<div class="menu-header clearfix">
 							<div class="menu-op"><a href="<?php echo home_url( '/' )."contato"; ?>">fale conosco</a></div>
-							<div class="menu-op"><a href="<?php echo home_url( '/' )."contato"; ?>">anúncie</a></div>
-							<div class="menu-op"><a href="<?php echo home_url( '/calculadora-btus' ).""; ?>">locação de salas</a></div>
-							<div class="menu-op"><a href="<?php echo home_url( '/servicos' ).""; ?>">terapeutas</a></div>
+							<div class="menu-op"><a href="<?php echo home_url( '/' )."anuncie-conosco"; ?>">anúncie</a></div>
+							<div class="menu-op"><a href="<?php echo home_url( '/locacao-de-salas' ).""; ?>">locação de salas</a></div>
+							<div class="menu-op"><a href="<?php echo home_url( '/terapeutas' ).""; ?>">terapeutas</a></div>
 							<div class="menu-op"><a href="<?php echo home_url( '/' )."sobre"; ?>">sobre</a></div>
 							<div class="menu-op"><a href="<?php echo home_url( '/' ); ?>">início</a></div>
 						</div>
