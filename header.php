@@ -52,7 +52,7 @@
 							</button>
 							<ul class="dropdown-menu">
 							<li><a href="<?php echo home_url( '/' ); ?>">início</a></li
-							><li><a href="<?php echo home_url( '/' )."sobre"; ?>">sobre</a></li
+							><li><a href="<?php echo home_url( '/' ).""; ?>">sobre</a></li
 							><li><a href="<?php echo home_url( '/' )."terapeutas"; ?>">terapeutas</a></li
 							><li><a href="<?php echo home_url( '/' )."locacao-de-salas"; ?>">locação de salas</a></li
 							><li><a href="<?php echo home_url( '/' )."anuncie-conosco"; ?>">anúncie</a></li
@@ -64,7 +64,7 @@
 							<div class="menu-op"><a href="<?php echo home_url( '/' )."anuncie-conosco"; ?>">anúncie</a></div>
 							<div class="menu-op"><a href="<?php echo home_url( '/locacao-de-salas' ).""; ?>">locação de salas</a></div>
 							<div class="menu-op"><a href="<?php echo home_url( '/terapeutas' ).""; ?>">terapeutas</a></div>
-							<div class="menu-op"><a href="<?php echo home_url( '/' )."sobre"; ?>">sobre</a></div>
+							<div class="menu-op"><a href="<?php echo home_url( '/' ).""; ?>">sobre</a></div>
 							<div class="menu-op"><a href="<?php echo home_url( '/' ); ?>">início</a></div>
 						</div>
 					</div>					

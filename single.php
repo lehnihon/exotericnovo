@@ -13,13 +13,7 @@ get_header(); ?>
 		<div class="row">
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<div class="col-md-6">
-					<h1 class="small"><?php the_title(); ?></h1>
-					
-					<div class="content"><?php echo strip_shortcodes(wpautop( get_the_content() )); ?></div>
-				</div>
-				<div class="col-md-6 text-left">
-
+				<div class="col-md-5">
 					<?php the_post_thumbnail('', array('class' => "img-responsive")); ?>
 					<div class="slider1">			
 						<?php
@@ -33,6 +27,11 @@ get_header(); ?>
 				        endif;
 						?>
 					</div>
+				</div>
+				<div class="col-md-6 col-md-offset-1 text-left">
+					<h1 class="small"><?php the_title(); ?></h1>
+					<div class="content"><?php echo strip_shortcodes(wpautop( get_the_content() )); ?></div>
+
 				</div>
 
 			<?php endwhile; // End of the loop. ?>

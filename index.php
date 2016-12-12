@@ -73,7 +73,6 @@ get_header(); ?>
 						</a>
 					<?php endif; ?>
 					<h4><?php the_title(); ?></h4>
-					<p><?php the_excerpt(); ?></p>
 					<a href="<?php the_permalink(); ?>" class="btn-saiba-mais">saiba mais ></a>
 				</div>
 	            <?php 
@@ -98,7 +97,7 @@ get_header(); ?>
 			</div><br>
 			<div class="row">
 			<?php
-			$args = array( 'posts_per_page' => 4, 'offset'=> 0, 'orderby' => 'rand'  );
+			$args = array( 'post_type' => 'produto', 'posts_per_page' => 4, 'orderby' => 'rand', 'tax_query' => array(array('taxonomy' => 'categoria_produto', 'field' => 'slug', 'terms' => 'estetica') )   );
 
 			$myposts = get_posts( $args );
 			$i = 0;

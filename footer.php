@@ -8,7 +8,7 @@
 					<div class="col-md-3 col-md-offset-2">
 						<h4>Portal dos Terapeutas SP</h4>
 						<ul>
-							<li><a href="<?php echo home_url( '/' )."sobre"; ?>">A Empresa</a></li>
+							<li><a href="<?php echo home_url( '/' ).""; ?>">A Empresa</a></li>
 							<li><a href="<?php echo home_url( '/' )."terapeutas"; ?>">Terapeutas</a></li>
 							<li><a href="<?php echo home_url( '/' )."locacao-de-salas"; ?>">Locação de Salas</a></li>
 							<li><a href="<?php echo home_url( '/' )."anuncie-conosco"; ?>">Anúncie no Portal</a></li>
