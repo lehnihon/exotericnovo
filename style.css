@@ -272,7 +272,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       margin-right: 20px; }
       #page section#header nav.aux div.menu-header div.menu-op a {
         color: #501819;
-        font-weight: bold;
         padding: 10px;
         font-size: 16px; }
       #page section#header nav.aux div.menu-header div.menu-op a:hover {
@@ -306,7 +305,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     padding-top: 40px; }
   #page div#content section.servicos {
     background-color: #f9f9f9;
-    padding: 60px 0; }
+    padding: 40px 0; }
     #page div#content section.servicos h4, #page div#content section.servicos p {
       margin: 15px 0; }
   #page div#content div#terapeutas-cat {
@@ -314,7 +313,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   #page div#content div#single {
     padding-top: 40px; }
   #page div#content section.servicosb {
-    padding: 60px 0; }
+    padding: 40px 0; }
     #page div#content section.servicosb h4, #page div#content section.servicosb p {
       margin: 15px 0; }
   #page div#content section#fotos-sobre {
@@ -366,7 +365,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
       margin-top: 10px;
       color: #501819; }
   #page div#content section#redes-bot {
-    padding: 60px 0;
+    padding: 40px 0;
     background-color: white; }
     #page div#content section#redes-bot .redes_sociais_bot {
       margin-bottom: 5px;
