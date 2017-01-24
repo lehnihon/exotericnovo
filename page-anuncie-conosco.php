@@ -8,7 +8,7 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 text-left">
-					<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 2 ); } ?>
+					<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 13 ); } ?>
 				</div>
 				<div class="col-md-6 text-left ">
 					<div class="quadro">
