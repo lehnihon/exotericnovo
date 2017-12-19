@@ -7,7 +7,7 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">		
 				<div class="col-md-12">
-					<?php putRevSlider( "banner-index" ) ?>
+					<?php echo do_shortcode("[metaslider id=699]");  ?>
 				</div>
 			</div><br><br>
 			<div class="row">

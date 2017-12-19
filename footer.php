@@ -66,6 +66,18 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<script>
 
+( function( $ ) {
+
+    $(function() {
+	    $('.drop-event').on('mouseenter mouseleave',function(){
+			$(this).children( ".drop-sub" ).toggle();
+		});
+    });
+
+} )( jQuery );
+	
+</script>
 </body>
 </html>

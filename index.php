@@ -5,7 +5,9 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">		
 				<div class="col-md-12">
-					<?php putRevSlider( "banner-index" ) ?>
+					<?php 
+					    echo do_shortcode("[metaslider id=699]"); 
+					?>
 				</div>
 			</div><br><br>
 		</div>
@@ -49,11 +51,54 @@ get_header(); ?>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2>Terapeutas</h2>
+					<h2>Terapeutas Mulheres</h2>
 				</div>
 			</div><br>
 			<?php
-			$args = array( 'posts_per_page' => 12, 'offset'=> 0, 'orderby' => 'rand'  );
+			$args = array( 'posts_per_page' => 16, 'offset'=> 0, 'orderby' => 'rand', 'category_name' => 'feminino'  );
+
+			$myposts = get_posts( $args );
+			$i = 0;
+			foreach ( $myposts as $post ) : setup_postdata( $post );
+			?>
+				<?php
+				if($i % 4 == 0):
+				?>
+					<div class="row">
+				<?php endif ?>
+				<div class="col-md-3 text-left">
+					<?php if ( has_post_thumbnail()) : ?>
+						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
+							<?php the_post_thumbnail('home-thumb', array(
+								'class' => "e-claro img-responsive",
+							)); ?>
+						</a>
+					<?php endif; ?>
+					<h4><?php the_title(); ?></h4>
+					<a href="<?php the_permalink(); ?>" class="btn-saiba-mais">saiba mais ></a>
+				</div>
+	            <?php 
+	            $i++;
+	            if($i % 4 == 0): 
+	            ?>
+					</div><br><br>
+				<?php endif ?>
+			<?php
+			endforeach;
+			if($i % 4 != 0):
+			?>
+				</div><br><br>
+			<?php
+			endif;
+			wp_reset_postdata();
+			?>
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Terapeutas Homens</h2>
+				</div>
+			</div><br>
+			<?php
+			$args = array( 'posts_per_page' => 16, 'offset'=> 0, 'orderby' => 'rand', 'category_name' => 'masculino'  );
 
 			$myposts = get_posts( $args );
 			$i = 0;
@@ -157,18 +202,18 @@ get_header(); ?>
 				<div class="col-md-6 text-left">
 					<div class="row">
 						<div class="col-md-6">
-							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner-3.jpg"; ?>"/>
+							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/Portal dos Terapeutas 01.jpg"; ?>"/>
 						</div>
 						<div class="col-md-6">
-							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner-3.jpg"; ?>"/>
+							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/Portal dos Terapeutas 02.jpg"; ?>"/>
 						</div>
 					</div>
 					<div style="margin-top:25px" class="row">	
 						<div class="col-md-6">
-							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner-3.jpg"; ?>"/>
+							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/Portal dos Terapeutas 03.jpg"; ?>"/>
 						</div>
 						<div class="col-md-6">
-							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/banner-3.jpg"; ?>"/>
+							<img class="e-claro img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/Portal dos Terapeutas 04.jpg"; ?>"/>
 						</div>
 					</div>
 				</div>

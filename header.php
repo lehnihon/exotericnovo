@@ -15,9 +15,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
+<link rel="shortcut icon" type="image/png" href="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/Porta dos Terapeutas.jpg"; ?>" />
 <?php wp_head(); ?>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-70607501-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-70607501-1');
+</script>
 </head>
 
 <body>
@@ -30,7 +37,7 @@
 						<span>Atendimento: <strong>11 2561-5068</strong></span> 
 						<span style="margin-left: 10px">WhatsApp.: <strong>11 95373-9510</strong></span>
 						<ul class="redes_sociais_header">
-							<li class="youtube"><a target="_blank" href="#"></a></li>
+							<li class="youtube"><a target="_blank" href="https://www.facebook.com/Portal-dos-Terapeutas-1651854558170816/"></a></li>
 							<li class="instagram"><a target="_blank" href="#"></a></li>
 							<li class="twitter"><a target="_blank" href="#"></a></li>
 							<li class="facebook"><a target="_blank" href="#"></a></li>
@@ -52,8 +59,8 @@
 							</button>
 							<ul class="dropdown-menu">
 							<li><a href="<?php echo home_url( '/' ); ?>">início</a></li
-							><li><a href="<?php echo home_url( '/' ).""; ?>">sobre</a></li
-							><li><a href="<?php echo home_url( '/' )."terapeutas"; ?>">terapeutas</a></li
+							><li><a href="<?php echo home_url( '/sobre' ).""; ?>">sobre</a></li
+							><li class="drop-container"><a href="<?php echo home_url( '/' )."terapeutas"; ?>">terapeutas</a></li
 							><li><a href="<?php echo home_url( '/' )."locacao-de-salas"; ?>">locação de salas</a></li
 							><li><a href="<?php echo home_url( '/' )."anuncie-conosco"; ?>">anúncie</a></li
 							><li><a href="<?php echo home_url( '/' )."contato"; ?>">fale conosco</a></li>
@@ -63,8 +70,14 @@
 							<div class="menu-op"><a href="<?php echo home_url( '/' )."contato"; ?>">fale conosco</a></div>
 							<div class="menu-op"><a href="<?php echo home_url( '/' )."anuncie-conosco"; ?>">anúncie</a></div>
 							<div class="menu-op"><a href="<?php echo home_url( '/locacao-de-salas' ).""; ?>">locação de salas</a></div>
-							<div class="menu-op"><a href="<?php echo home_url( '/terapeutas' ).""; ?>">terapeutas</a></div>
-							<div class="menu-op"><a href="<?php echo home_url( '/' ).""; ?>">sobre</a></div>
+							<div class="menu-op drop-container drop-event"><a href="<?php echo home_url( '/terapeutas' ).""; ?>">terapeutas</a>
+								<div class="drop-sub">>
+									<div><a href="<?php echo home_url( '/' )."masculino"; ?>">masculino</a></div>
+									<div><a href="<?php echo home_url( '/' )."feminino"; ?>">feminino</a></div>
+									<div><a href="<?php echo home_url( '/' )."trans"; ?>">trans</a></div>
+								</div>
+							</div>
+							<div class="menu-op"><a href="<?php echo home_url( '/sobre' ).""; ?>">sobre</a></div>
 							<div class="menu-op"><a href="<?php echo home_url( '/' ); ?>">início</a></div>
 						</div>
 					</div>					

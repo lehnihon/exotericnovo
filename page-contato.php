@@ -21,11 +21,11 @@ get_header(); ?>
 						</p>
 						<p>
 							<strong>Telefone</strong>
-							11 3203-1478  |  11 98937-2110
+							11 3203-1478  |  11 3105-5158  |  11 97696-9630
 						</p>
 						<p>
 							<strong>Endereço</strong>
-							Rua Silveira Martins, 160 - Conjunto 02 - Praça da Sé São Paulo - SP
+							Rua Silveira Martins, 160 - Conjunto 02 <br>Praça da Sé São Paulo - SP
 						</p>
 
 					</div>
