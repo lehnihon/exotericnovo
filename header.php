@@ -71,7 +71,7 @@
 							<div class="menu-op"><a href="<?php echo home_url( '/' )."anuncie-conosco"; ?>">anúncie</a></div>
 							<div class="menu-op"><a href="<?php echo home_url( '/locacao-de-salas' ).""; ?>">locação de salas</a></div>
 							<div class="menu-op drop-container drop-event"><a href="<?php echo home_url( '/terapeutas' ).""; ?>">terapeutas</a>
-								<div class="drop-sub">>
+								<div class="drop-sub">
 									<div><a href="<?php echo home_url( '/' )."masculino"; ?>">masculino</a></div>
 									<div><a href="<?php echo home_url( '/' )."feminino"; ?>">feminino</a></div>
 									<div><a href="<?php echo home_url( '/' )."trans"; ?>">trans</a></div>
